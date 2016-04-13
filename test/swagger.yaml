@@ -1,0 +1,19 @@
+swagger: '2.0'
+info:
+  version: "1.0.0"
+  title: "API Gateway"
+
+basePath: /v2
+
+apis:
+    pet: https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/yaml/petstore.yaml
+    uber: https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/uber.json
+
+# TODO
+exclude_paths:
+  - DELETE /pets/{petId}
+
+# TODO
+exclude_fields:
+  petPet:
+    - id

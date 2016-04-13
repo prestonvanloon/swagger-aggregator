@@ -1,0 +1,36 @@
+{
+  "name": "swagger-aggregator",
+  "version": "0.1.0",
+  "description": "Aggregate several swagger APIs in one",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prestonvanloon/swagger-aggregator.git"
+  },
+  "keywords": [
+    "swagger",
+    "plugin",
+    "swaggerplugin",
+    "aggregator"
+  ],
+  "author": "Preston Van Loon <preston@machinepowered.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prestonvanloon/swagger-aggregator/issues"
+  },
+  "homepage": "https://github.com/prestonvanloon/swagger-aggregator#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3",
+    "sinon-as-promised": "^4.0.0"
+  },
+  "dependencies": {
+    "js-yaml": "^3.5.5",
+    "ramda": "^0.21.0",
+    "request-promise": "^2.0.1"
+  }
+}
