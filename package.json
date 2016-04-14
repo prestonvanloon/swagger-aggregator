@@ -1,6 +1,6 @@
 {
   "name": "swagger-aggregator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Aggregate several swagger APIs in one",
   "main": "index.js",
   "scripts": {
