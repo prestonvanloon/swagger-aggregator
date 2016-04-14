@@ -42,5 +42,5 @@ describe('getSwagger', () => {
     });
   });
 
-
+  it('should work with files');
 });
