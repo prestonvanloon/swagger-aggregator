@@ -4,7 +4,8 @@
   "description": "Aggregate several swagger APIs in one",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha",
+    "coverage": "NODE_ENV=test YOURPACKAGE_COVERAGE=1 ./node_modules/.bin/mocha --require blanket --reporter mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": {
     "type": "git",
@@ -23,8 +24,11 @@
   },
   "homepage": "https://github.com/prestonvanloon/swagger-aggregator#readme",
   "devDependencies": {
+    "blanket": "^1.2.3",
     "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
     "mocha": "^2.4.5",
+    "mocha-lcov-reporter": "^1.2.0",
     "sinon": "^1.17.3",
     "sinon-as-promised": "^4.0.0"
   },
