@@ -2,11 +2,11 @@
 
 const expect = require('chai').expect;
 
-const fields = ['exclude_paths', 'exclude_fields', 'apis'];
+const fields = ['x-exclude_paths', 'x-exclude_fields', 'x-apis'];
 const obj = {
-  exclude_paths: 'asdf',
-  exclude_fields: 'asdf',
-  apis: 'apis'
+  'x-exclude_paths': 'asdf',
+  'x-exclude_fields': 'asdf',
+  'x-apis': 'apis'
 };
 
 const stripFields = require('../lib/stripFields');

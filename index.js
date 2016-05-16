@@ -9,10 +9,10 @@ const stripFields = require('./lib/stripFields');
 
 function swaggerAggregator(file) {
   const doc = yaml.safeLoad(fs.readFileSync(file, 'utf8'));
-  const keys = Object.keys(doc.apis);
+  const keys = Object.keys(doc['x-apis']);
 
   const pending = keys.map(key => {
-    return getSwagger(doc.apis[key]);
+    return getSwagger(doc['x-apis'][key]);
   });
 
   return Promise.all(pending)
