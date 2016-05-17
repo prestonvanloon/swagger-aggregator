@@ -20,13 +20,13 @@ info:
 
 basePath: /v2
 
-apis:
+x-apis:
     pet: https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/yaml/petstore.yaml
     uber: https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v2.0/json/uber.json
     trains: local/file/trains.yaml
 ```
 
-The `apis` property is the list of external or local schemas to aggregate.
+The `x-apis` property is the list of external or local schemas to aggregate.
 
 To use `swagger-aggregator`, simply require it and pass the file name to aggregate. `swagger-aggregator` returns a promise with the JSON object result.
 
